@@ -776,3 +776,48 @@ body {
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-container {
+    flex-wrap: wrap;
+  }
+
+  .cart-panel {
+    width: 100%;
+  }
+
+  .product-card {
+    margin: 0 auto;
+  }
+
+  .notification {
+    right: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+  }
+}
