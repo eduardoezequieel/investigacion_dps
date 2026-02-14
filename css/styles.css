@@ -723,3 +723,56 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-input {
+    max-width: 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .cart-panel {
+    width: 100%;
+    right: -100%;
+  }
+
+  .cart-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .cart-item-info img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cart-item-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quantity-controls {
+    justify-content: center;
+  }
+
+  .remove-btn {
+    width: 100%;
+  }
+}
