@@ -177,3 +177,36 @@ body {
   position: relative;
   z-index: 1;
 }
+
+/* Sección de Filtros */
+.filters {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-container label {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.category-filter {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.category-filter:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
