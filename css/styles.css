@@ -24,3 +24,29 @@ body {
   color: var(--text-dark);
   line-height: 1.6;
 }
+
+/* Encabezado */
+.header {
+  background-color: white;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo h1 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
