@@ -4,7 +4,7 @@
 - Eduardo Ezequiel López Rivera LR230061
 - Andrés René Velásquez Rodríguez VR222732
 - Diego Guillermo Esnard Romero ER231474
-
+- Diego René López Martínez LM231893
 
 
 # Investigación DPS - Carrito de Compras (JS)
