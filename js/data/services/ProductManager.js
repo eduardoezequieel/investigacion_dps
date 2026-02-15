@@ -68,3 +68,37 @@ class ProductManager {
     }
   }
 
+  /**
+   * Busca productos por nombre o descripción
+   * @param {string} query - Término de búsqueda
+   * @returns {Array} Array de productos que coinciden con la búsqueda
+   */
+  searchProducts(query) {
+    try {
+      if (!query || typeof query !== 'string') {
+        return this.products;
+      }
+
+      // Sanitizar la query: eliminar caracteres especiales peligrosos
+      const sanitizedQuery = query
+        .trim()
+        .replace(/[<>{}[\]\\\/]/g, '')
+        .toLowerCase();
+
+      if (sanitizedQuery.length === 0) {
+        return this.products;
+      }
+
+      return this.products.filter(product =>
+        product.name.toLowerCase().includes(sanitizedQuery) ||
+        product.description.toLowerCase().includes(sanitizedQuery) ||
+        product.category.toLowerCase().includes(sanitizedQuery)
+      );
+    } catch (error) {
+      console.error('Error al buscar productos:', error);
+      return this.products;
+    }
+  }
+}
+
+export const productManager = new ProductManager();
