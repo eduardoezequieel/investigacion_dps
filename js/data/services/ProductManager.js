@@ -54,3 +54,17 @@ class ProductManager {
     }
   }
 
+  /**
+   * Obtiene todas las categorías únicas de productos
+   * @returns {Array} Array de nombres de categorías
+   */
+  getCategories() {
+    try {
+      const categories = new Set(this.products.map(p => p.category));
+      return Array.from(categories);
+    } catch (error) {
+      console.error('Error al obtener categorías:', error);
+      return [];
+    }
+  }
+
