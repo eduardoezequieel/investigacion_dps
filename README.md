@@ -5,6 +5,7 @@
 - Andrés René Velásquez Rodríguez VR222732
 - Diego Guillermo Esnard Romero ER231474
 - Diego René López Martínez LM231893
+- Christian Gustavo Crespin Lozano CL060107
 
 
 # Investigación DPS - Carrito de Compras (JS)
