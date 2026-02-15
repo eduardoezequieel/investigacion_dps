@@ -36,4 +36,21 @@ class ProductManager {
       return undefined;
     }
   }
-}
+
+  /**
+   * Obtiene productos filtrados por categoría
+   * @param {string} category - Nombre de la categoría
+   * @returns {Array} Array de productos en la categoría
+   */
+  getProductsByCategory(category) {
+    try {
+      if (!category || typeof category !== 'string') {
+        return [];
+      }
+      return this.products.filter(product => product.category === category.toLowerCase());
+    } catch (error) {
+      console.error('Error al filtrar por categoría:', error);
+      return [];
+    }
+  }
+
