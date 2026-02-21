@@ -9,14 +9,14 @@
 </head>
 
 <body>
-   
+  <!-- Header -->
   <header class="header">
     <div class="header-container">
       <div class="logo">
         <h1>🔧 TechHub</h1>
       </div>
 
-      
+      <!-- Navegación -->
       <nav class="nav">
         <div class="search-bar">
           <input type="text" id="search-input" class="search-input" placeholder="Buscar productos...">
@@ -31,8 +31,10 @@
       </div>
     </div>
   </header>
+
+  <!-- Main Content -->
   <main class="main-content">
-  
+    <!-- Sección de Landing -->
     <section class="hero">
       <div class="hero-content">
         <h2>Bienvenido a TechHub</h2>
@@ -40,7 +42,8 @@
         <p class="hero-subtitle">Descubre gadgets y electrónica de última generación</p>
       </div>
     </section>
-    
+
+    <!-- Sección de Filtros -->
     <section class="filters">
       <div class="filter-container">
         <label for="category-filter">Categoría:</label>
@@ -49,21 +52,23 @@
         </select>
       </div>
     </section>
-    
+
+    <!-- Sección de Productos -->
     <section class="products-section">
       <div id="products-container" class="products-grid">
-       
+        <!-- Los productos se renderizarán aquí -->
       </div>
     </section>
   </main>
 
+  <!-- Panel del Carrito -->
   <div id="cart-panel" class="cart-panel">
     <div class="cart-header">
       <h2>Carrito de Compras</h2>
       <button id="close-cart" class="close-btn">&times;</button>
     </div>
     <div id="cart-items" class="cart-items">
-      
+      <!-- Los artículos del carrito se renderizarán aquí -->
     </div>
     <div class="cart-footer">
       <div class="cart-total-section">
@@ -73,9 +78,54 @@
       <button id="checkout-btn" class="checkout-btn">Ir al Pago</button>
     </div>
   </div>
- 
+
+  <!-- Modal de Checkout (datos del cliente) -->
   <div id="checkout-modal" class="modal">
     <div class="modal-content checkout-modal-content">
+      <div class="modal-header">
+        <h2>Datos del Cliente</h2>
+        <button id="close-checkout-modal" class="close-btn">&times;</button>
+      </div>
+      <form id="checkout-form" class="checkout-form">
+        <div class="form-group">
+          <label for="customer-name">Nombre Completo *</label>
+          <input type="text" id="customer-name" name="name" required placeholder="Ej: Juan Pérez">
+        </div>
+        <div class="form-group">
+          <label for="customer-email">Correo Electrónico *</label>
+          <input type="email" id="customer-email" name="email" required placeholder="Ej: juan@example.com">
+        </div>
+        <div class="form-group">
+          <label for="customer-address">Dirección (Opcional)</label>
+          <textarea id="customer-address" name="address" rows="3" placeholder="Ej: San José, Costa Rica"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="button" id="cancel-checkout" class="btn-secondary">Cancelar</button>
+          <button type="submit" class="btn-primary">Generar Factura</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de Factura -->
+  <div id="invoice-modal" class="modal">
+    <div class="modal-content invoice-modal-content">
+      <div class="modal-header">
+        <h2>Factura Generada</h2>
+        <button id="close-invoice-modal" class="close-btn">&times;</button>
+      </div>
+      <div id="invoice-content" class="invoice-content">
+        <!-- La factura se renderizará aquí dinámicamente -->
+      </div>
+      <div class="invoice-actions">
+        <button id="print-invoice" class="btn-secondary">🖨️ Imprimir</button>
+        <button id="continue-shopping" class="btn-primary">Seguir Comprando</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
 </body>
 
 </html>
