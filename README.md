@@ -5,6 +5,9 @@
 - Diego René López Martínez LM231893
 - Christian Gustavo Crespin Lozano CL060107
 
+## Enlace del deploy del proyecto
+[Enlace al sitio web](https://eduardoezequieel.github.io/investigacion_dps/)
+
 # TechHub - Tech Store App
 
 Aplicación de tienda de tecnología desarrollada con JavaScript Vanilla y arquitectura modular.
@@ -84,7 +87,7 @@ Usuario interactúa
 
 ## 🚀 Cómo Usar
 
-1. Abre `index.html` en tu navegador
+1. Sirve el proyecto desde un servidor local (por ejemplo, con la extensión **Live Server** de VS Code) y abre `index.html` — no abrir directamente desde el explorador de archivos, ya que los módulos ES6 requieren un entorno de servidor
 2. Explora los productos disponibles
 3. Usa la barra de búsqueda o filtros por categoría
 4. Agrega productos al carrito
